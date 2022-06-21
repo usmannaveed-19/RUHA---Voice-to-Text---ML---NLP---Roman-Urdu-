@@ -1,0 +1,84 @@
+<!--# MUHAMMAD USMAN NAVEED -->
+<!--# 20I - 0826-->
+<!--# AI - J-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+
+</head>
+<body>
+
+    <h2>RESULTS</h2>
+<!--    <tr>-->
+<!--      {% for x in pred %}-->
+<!--           <td>{{ col }}</td>-->
+<!--      {% endfor %}-->
+<!--    </tr>-->
+    <table>
+      <tr>
+        <th>Models</th>
+        <th>Predictions</th>
+      </tr>
+      <tr>
+        <td>Decision Tree</td>
+        <td>{{ pred[0] }}</td>
+      </tr>
+      <tr>
+        <td>K-Nearest Neighbors</td>
+        <td>{{ pred[1]  }}</td>
+      </tr>
+      <tr>
+        <td>Random Forest Classifier</td>
+        <td>{{ pred[2] }}</td>
+      </tr>
+      <tr>
+        <td>Support Vector Machine</td>
+        <td>{{ pred[3] }}</td>
+      </tr>
+      <tr>
+        <td>Gradient Boosting</td>
+        <td>{{ pred[4] }}</td>
+      </tr>
+      <tr>
+        <td>Linear Regression</td>
+        <td>{{ pred[5] }}</td>
+      </tr>
+    </table>
+
+    <h2> Reference Key: </h2>
+    <ul>
+      <li style="font-size:20px;">   0    ->    A.C </li>
+      <li style="font-size:20px;">   1    ->    BULB-LIGHT </li>
+      <li style="font-size:20px;">   2    ->    GAANA-SONG </li>
+      <li style="font-size:20px;">   3    ->    T.V </li>
+    </ul>
+
+</body>
+</html>
